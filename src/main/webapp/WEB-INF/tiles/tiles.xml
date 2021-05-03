@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+
+   <definition name="base" template="/WEB-INF/jsp/layout/base.jsp">
+       <put-attribute name="header" value="/WEB-INF/jsp/layout/header.jsp" />
+       <put-attribute name="body" value="" />
+   </definition>
+   
+   <definition name="baseAPI" template="/WEB-INF/jsp/layout/baseAPI.jsp">
+       <put-attribute name="header" value="/WEB-INF/jsp/layout/header.jsp" />
+       <put-attribute name="body" value="" />
+   </definition>
+   
+	<definition name="resultBody" extends="base">
+		<put-attribute name="body" value="/WEB-INF/jsp/common/resultBody.jsp" />
+	</definition>
+	
+	<definition name="login" extends="base">
+		<put-attribute name="body" value="/WEB-INF/jsp/member/login.jsp" />
+	</definition>
+
+	<definition name="memberList" extends="base">
+		<put-attribute name="body" value="/WEB-INF/jsp/member/memberList.jsp" />
+	</definition>
+
+	<definition name="changePassword" extends="base">
+		<put-attribute name="body" value="/WEB-INF/jsp/member/changePassword.jsp" />
+	</definition>
+
+	<definition name="index" extends="base">
+		<put-attribute name="body" value="/WEB-INF/jsp/index.jsp" />
+	</definition>
+
+	<definition name="findId" extends="base">
+		<put-attribute name="body" value="/WEB-INF/jsp/member/findId.jsp" />
+	</definition>
+
+	<definition name="findPw" extends="base">
+		<put-attribute name="body" value="/WEB-INF/jsp/member/findPw.jsp" />
+	</definition>
+	
+	<definition name="memberReg" extends="base">
+		<put-attribute name="body" value="/WEB-INF/jsp/member/memberReg.jsp" />
+	</definition>
+	
+	<definition name="memberUpt" extends="base">
+		<put-attribute name="body" value="/WEB-INF/jsp/member/memberUpt.jsp" />
+	</definition>
+	
+	<definition name="addressAPIPopup" extends="baseAPI">
+		<put-attribute name="body" value="/WEB-INF/jsp/member/addressAPIPopup.jsp" />
+	</definition>
+
+	<definition name="boardList" extends="base">
+		<put-attribute name="body" value="/WEB-INF/jsp/board/boardList.jsp" />
+	</definition>
+	
+	<definition name="boardView" extends="base">
+		<put-attribute name="body" value="/WEB-INF/jsp/board/boardView.jsp" />
+	</definition>
+	
+	<definition name="boardReg" extends="base">
+		<put-attribute name="body" value="/WEB-INF/jsp/board/boardReg.jsp" />
+	</definition>
+	
+	<definition name="boardUpt" extends="base">
+		<put-attribute name="body" value="/WEB-INF/jsp/board/boardUpt.jsp" />
+	</definition>
+</tiles-definitions>
